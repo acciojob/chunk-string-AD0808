@@ -1,9 +1,9 @@
 function stringChop(str, size) {
-if (!str) return []; // Return empty array if input is null or empty
+if (!str) return []; 
   
   let result = [];
   for (let i = 0; i < str.length; i += size) {
-    result.push(str.substring(i, i + size)); // Extract chunks of given size
+    result.push(str.slice(i, i + size)); 
   }
   
   return result;	
